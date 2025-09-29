@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Indonesian Business Landing Page Design System 
+Inspired by visualabs.id, akademi.ryanlars.com, grandslam.id
+Color palette: Red-White-Black theme
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 6%;
+
+    /* Red primary color for CTA and accents */
+    --primary: 0 84% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 0 84% 45%;
+    --primary-light: 0 84% 65%;
+
+    /* Clean secondary colors */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 84% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 100%;
+    --input-border: 0 0% 85%;
+    --ring: 0 84% 55%;
+
+    /* Professional gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 84% 55%), hsl(0 84% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 6%), hsl(0 0% 12%));
+
+    /* Shadows and effects */
+    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.1);
+    --shadow-button: 0 4px 14px hsl(0 84% 55% / 0.25);
+    --shadow-form: 0 8px 30px hsl(0 0% 0% / 0.12);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 84% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 0 84% 45%;
+    --primary-light: 0 84% 65%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 84% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --input-border: 0 0% 20%;
+    --ring: 0 84% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(0 84% 55%), hsl(0 84% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 6%), hsl(0 0% 8%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 4%), hsl(0 0% 10%));
+
+    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.3);
+    --shadow-button: 0 4px 14px hsl(0 84% 55% / 0.4);
+    --shadow-form: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Typography */
+  .heading-hero {
+    @apply text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight;
+  }
+
+  .heading-section {
+    @apply text-2xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+
+  .heading-card {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
+  .text-large {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+
+  /* Button variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-primary-foreground shadow-[var(--shadow-button)] hover:shadow-lg hover:scale-105 transition-all duration-300 font-bold px-8 py-4 text-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply bg-input border border-input-border focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground transition-all;
+  }
+
+  /* Card styles */
+  .card-elevated {
+    @apply bg-card border border-border shadow-[var(--shadow-card)] hover:shadow-lg transition-all duration-300;
+  }
+
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  background: linear-gradient(135deg, #25D366, #20B358);
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
