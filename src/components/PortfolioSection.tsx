@@ -6,49 +6,42 @@ import portfolio1 from "@/assets/tiktok/1.png";
 import portfolio2 from "@/assets/tiktok/2.png";
 import portfolio3 from "@/assets/tiktok/3.png";
 import portofolio4 from "@/assets/tiktok/4.png";
-import portofolio5 from "@/assets/tiktok/5.png";
+
 
 const portfolioItems = [
   {
     id: 1,
-    title: "E-Commerce Fashion Store",
-    description: "Meningkatkan konversi 300% dalam 3 bulan dengan landing page yang dioptimasi",
+    title: "Fashion Brand",
+    description: "Meningkatkan pendapatan hingga 6,5x lipat dan ROI naik dari 4,41 ke 46,06 hanya dalam 3 bulan melalui strategi TikTok Ads GMV Max",
     image: portfolio1,
     category: "Tiktok Ads",
-    results: "+300% Konversi"
+    results: "Pendapatan naik 6,5x lipat"
   },
   {
     id: 2,
-    title: "SaaS Business Dashboard",
-    description: "Platform B2B dengan user experience yang seamless dan conversion rate tinggi",
+    title: "Agriculture ",
+    description: "Dalam 1 bulan, Agriculture Brand ini berhasil meningkatkan pendapatan hingga 4,5x lipat dan pesanan naik lebih dari 400% lewat strategi TikTok Ads GMV Max dan optimasi funnel yang presisi. Hasilnya, ROI melonjak dari 6,16 ke 13,67, membuktikan efektivitas strategi berbasis data dan creative testing yang tepat sasaran.",
     image: portfolio2,
     category: "Tiktok Ads",
-    results: "+250% Sign-ups"
+    results: "+400% Pesanan"
   },
   {
     id: 3,
-    title: "Digital Marketing Agency",
-    description: "Lead generation system yang menghasilkan 500+ qualified leads per bulan",
+    title: "Fashion Brand",
+    description: "Pendapatan meningkat lebih dari 6x lipat dan produk terjual melonjak 360%!",
     image: portfolio3,
     category: "Tiktok Ads", 
-    results: "+500 Leads/bulan"
+    results: "+360% Leads/bulan"
   },
   {
     id: 4,
-    title: "Restaurant Chain Website",
-    description: "Online ordering system yang meningkatkan penjualan online 400%",
+    title: "Fashion Brand",
+    description: "GMV meningkat hampir 5x lipat dan produk terjual melonjak lebih dari 13x!",
     image: portofolio4,
     category: "Tiktok Ads",
-    results: "+400% Online Sales"
+    results: "+13x Sales Melonjak"
   },
-  {
-    id: 5,
-    title: "Consultant Personal Brand",
-    description: "Personal branding website yang menghasilkan klien premium konsisten",
-    image: portofolio5,
-    category: "Tiktok Ads",
-    results: "50+ Premium Clients"
-  }
+
 ];
 
 const PortfolioSection = () => {
@@ -214,37 +207,38 @@ const PortfolioSection = () => {
         <div className="mt-8 space-y-4 text-muted-foreground">
           <ul className="list-disc pl-6 space-y-3">
             <li>
-              <span className="font-semibold text-black">ROAS Tinggi: 38,45x</span>  
+              <span className="font-semibold text-black">ROAS Tinggi: 46,06x</span>  
               <p>
-                Return on Ad Spend (ROAS) menunjukkan bahwa setiap Rp1 yang dikeluarkan menghasilkan Rp38,45.
-                Ini menandakan efektivitas tinggi dari strategi iklan yang digunakan.
+                Return on Ad Spend (ROAS) Setiap Rp1 yang diinvestasikan kini menghasilkan Rp46, 
+                menandakan efisiensi dan profitabilitas iklan meningkat lebih dari 10x lipat.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">Biaya Iklan Rendah, Omzet Tinggi</span>  
+              <span className="font-semibold text-black">Pendapatan Melonjak 6,5x Lipat</span>  
               <p>
-                Dengan hanya mengeluarkan biaya Rp325 ribu, iklan ini berhasil menghasilkan penjualan Rp12,5 juta.
-                Ini menunjukkan efisiensi dalam penggunaan budget iklan.
+                Gross revenue meningkat dari Rp106 juta menjadi Rp694 juta, hasil dari kombinasi creative yang lebih relevan,
+                CTA kuat, dan optimalisasi struktur iklan di TikTok Ads Manager.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">Jumlah Pesanan 128</span>  
+              <span className="font-semibold text-black">Lebih Banyak Pesanan dengan Biaya Lebih Efisien</span>  
               <p>
-                Dengan budget yang relatif kecil, iklan ini mampu menghasilkan 128 pesanan dalam sehari.
-                Ini menunjukkan bahwa produk memiliki demand tinggi dan strategi targeting yang digunakan tepat sasaran.
+                Dengan budget yang relatif kecil, Jumlah pesanan naik dari 1.677 menjadi 2.467, 
+                sementara biaya per pesanan justru turun dari Rp14.414 menjadi Rp6.113 efisiensi meningkat hampir 60%.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">CTR 5,31%</span>  
+              <span className="font-semibold text-black">Biaya Turun, Hasil Naik</span>  
               <p>
-                Persentase klik 5,31% menandakan bahwa iklan cukup menarik perhatian audiens dan memiliki tingkat engagement yang bagus.
+                Total biaya iklan justru menurun dari Rp24 juta menjadi Rp15 juta, namun menghasilkan penjualan yang jauh lebih tinggi. 
+                Ini membuktikan efektivitas strategi yang berbasis analisis performa dan segmentasi audiens yang akurat.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">Jumlah Klik 1.600</span>  
+              <span className="font-semibold text-black">Strategi</span>  
               <p>
-                Dari 1.600 klik yang didapat, ada konversi yang cukup baik hingga menghasilkan 128 pesanan.
-                Ini menggambarkan bahwa optimasi halaman produk juga berperan dalam mendorong pembelian.
+                Kunci keberhasilan ada pada kombinasi antara creative testing, optimasi funnel, dan penyesuaian audiens secara presisi. 
+                Hasilnya: ROI meningkat 10x, omzet naik 6,5x, dan biaya semakin efisien.
               </p>
             </li>
           </ul>

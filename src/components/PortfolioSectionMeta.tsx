@@ -2,53 +2,27 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ExternalLink, X } from "lucide-react";
-import portfolio1 from "@/assets/meta/1.png";
-import portfolio2 from "@/assets/meta/2.png";
-import portfolio3 from "@/assets/meta/3.png";
-import portofolio4 from "@/assets/meta/4.png";
-import portofolio5 from "@/assets/meta/5.png";
+import portfolio1 from "@/assets/meta/metonglp.jpg";
+import portfolio2 from "@/assets/meta/lpmetonhhh.jpg";
 
 const portfolioItems = [
   {
     id: 1,
-    title: "E-Commerce Fashion Store",
-    description: "Meningkatkan konversi 300% dalam 3 bulan dengan landing page yang dioptimasi",
-    image: portfolio1,
+    title: "E-Commerce Fashion Store (Before)",
+    description: "Permintaan Meningkatkan Roas",
+    image: portfolio2,
     category: "Meta Ads",
-    results: "+300% Konversi"
+    results: "Omset & ROAS Meningkat "
   },
   {
     id: 2,
-    title: "SaaS Business Dashboard",
+    title: "E-Commerce Fashion Store (After)",
     description: "Platform B2B dengan user experience yang seamless dan conversion rate tinggi",
-    image: portfolio2,
+    image: portfolio1,
     category: "Meta Ads",
-    results: "+250% Sign-ups"
+    results: " ROAS lebih dari 6,93 kali lipat."
   },
-  {
-    id: 3,
-    title: "Digital Marketing Agency",
-    description: "Lead generation system yang menghasilkan 500+ qualified leads per bulan",
-    image: portfolio3,
-    category: "Meta Ads", 
-    results: "+500 Leads/bulan"
-  },
-  {
-    id: 4,
-    title: "Restaurant Chain Website",
-    description: "Online ordering system yang meningkatkan penjualan online 400%",
-    image: portofolio4,
-    category: "Meta Ads",
-    results: "+400% Online Sales"
-  },
-  {
-    id: 5,
-    title: "Consultant Personal Brand",
-    description: "Personal branding website yang menghasilkan klien premium konsisten",
-    image: portofolio5,
-    category: "Meta Ads",
-    results: "50+ Premium Clients"
-  }
+
 ];
 
 const PortfolioSection = () => {
@@ -214,39 +188,34 @@ const PortfolioSection = () => {
         <div className="mt-8 space-y-4 text-muted-foreground">
           <ul className="list-disc pl-6 space-y-3">
             <li>
-              <span className="font-semibold text-black">ROAS Tinggi: 38,45x</span>  
+              <span className="font-semibold text-black">Permintaan :</span>  
               <p>
-                Return on Ad Spend (ROAS) menunjukkan bahwa setiap Rp1 yang dikeluarkan menghasilkan Rp38,45.
-                Ini menandakan efektivitas tinggi dari strategi iklan yang digunakan.
+                Merek fashion ini menjual produk pakaian dengan harapan mencapai ROAS sebesar 5X setiap bulannya.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">Biaya Iklan Rendah, Omzet Tinggi</span>  
+              <span className="font-semibold text-black">Aktivasi :</span>  
               <p>
-                Dengan hanya mengeluarkan biaya Rp325 ribu, iklan ini berhasil menghasilkan penjualan Rp12,5 juta.
-                Ini menunjukkan efisiensi dalam penggunaan budget iklan.
+                Kami menawarkan strategi seperti aktivasi merek dan 
+                pemasaran secara berkala di marketplace untuk menarik perhatian audiens dengan lebih efektif.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">Jumlah Pesanan 128</span>  
+              <span className="font-semibold text-black">Strategi Marketing :</span>  
               <p>
-                Dengan budget yang relatif kecil, iklan ini mampu menghasilkan 128 pesanan dalam sehari.
-                Ini menunjukkan bahwa produk memiliki demand tinggi dan strategi targeting yang digunakan tepat sasaran.
+                Kami menerapkan strategi branding yang berfokus pada User Generated Content (UGC) dan pembuatan konten yang 
+                relevan dengan audiens, diperkuat melalui peluncuran kampanye viral serta pemanfaatan tren terkini untuk memperluas 
+                jangkauan dan meningkatkan engagement. Selain itu, kami juga melakukan optimasi marketplace dengan memperbarui kata kunci
+                 dan desain banner guna memperkuat citra brand sekaligus mendorong peningkatan konversi secara signifikan.
               </p>
             </li>
             <li>
-              <span className="font-semibold text-black">CTR 5,31%</span>  
+              <span className="font-semibold text-black">Hasil :</span>
               <p>
-                Persentase klik 5,31% menandakan bahwa iklan cukup menarik perhatian audiens dan memiliki tingkat engagement yang bagus.
+                Selama tiga tahun bekerja sama, kami berhasil meningkatkan omzet hingga 77% dalam enam bulan, 
+                dengan hasil iklan mencapai ROAS lebih dari 6,93 kali lipat.
               </p>
-            </li>
-            <li>
-              <span className="font-semibold text-black">Jumlah Klik 1.600</span>  
-              <p>
-                Dari 1.600 klik yang didapat, ada konversi yang cukup baik hingga menghasilkan 128 pesanan.
-                Ini menggambarkan bahwa optimasi halaman produk juga berperan dalam mendorong pembelian.
-              </p>
-            </li>
+          </li>
           </ul>
         </div>
 
