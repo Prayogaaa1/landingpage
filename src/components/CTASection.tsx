@@ -40,7 +40,7 @@ const CTASection = () => {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
             <Shield className="h-8 w-8 text-white mb-3 mx-auto" />
             <div className="text-white font-semibold mb-1">100% Garansi</div>
-            <div className="text-white/80 text-sm">Uang kembali jika tidak puas dengan hasilnya</div>
+            <div className="text-white/80 text-sm">Kami berkomitmen memberikan hasil terbaik tanpa kompromi</div>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
