@@ -85,21 +85,27 @@ const ServicesSection = () => {
                 {service.description}
               </p>
 
-              {/* Features (pakai bullet list biar rapi) */}
+              {/* Features */}
               <ul className="list-disc list-outside pl-5 text-sm text-muted-foreground space-y-2 mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex}>{feature}</li>
                 ))}
               </ul>
 
-              {/* CTA */}
-              <Button 
-                variant="outline" 
-                className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
+              {/* CTA WhatsApp */}
+              <a 
+                href="https://wa.me/6282240474780?text=Halo%20TnT%20Team%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20layanan%20Anda."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Pelajari Lebih Lanjut
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
+                >
+                  Pelajari Lebih Lanjut
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </Card>
           ))}
         </div>
